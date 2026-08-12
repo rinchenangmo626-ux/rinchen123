@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A public collection of stories, memories, thoughts, and fragments from a life still being lived.">
+  <title>My Written Life</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">My Written Life</a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#writing">Writing</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">An unfinished collection</p>
+      <h1>Things I don't<br><em>want to lose.</em></h1>
+      <p class="intro">
+        Stories, memories, thoughts, questions, fragments and everything
+        I feel like writing down while I am here.
+      </p>
+      <a class="button" href="#writing">Read the writing ↓</a>
+    </section>
+
+    <section class="quote">
+      <p>“I don't need this to become important. I just want it to exist.”</p>
+    </section>
+
+    <section id="writing" class="writing-section">
+      <div class="section-heading">
+        <p class="eyebrow">The collection</p>
+        <h2>Writing</h2>
+        <p>There is no fixed order here. I write whatever wants to be written.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card featured">
+          <span class="tag">Beginning</span>
+          <h3>Why I'm Writing This</h3>
+          <p>I don't really know what this is going to become. Maybe a book. Maybe a collection. Maybe simply a place where thoughts can exist outside my head.</p>
+          <button class="read-more" data-title="Why I'm Writing This" data-text="I don't really know what this is going to become. Maybe a book. Maybe a collection. Maybe simply a place where thoughts can exist outside my head. I want to write when I feel like writing. I want these thoughts to have somewhere to exist.">Read →</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">Fragments</span>
+          <h3>Things I Never Said</h3>
+          <p>Some thoughts don't arrive as stories. Sometimes they are only a sentence that refuses to leave.</p>
+          <button class="read-more" data-title="Things I Never Said" data-text="This is a placeholder for your writing. Replace it with the things you have never said, or with whatever you feel like writing today.">Read →</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">Memory</span>
+          <h3>The House</h3>
+          <p>A place can disappear from the map and still remain somewhere inside you.</p>
+          <button class="read-more" data-title="The House" data-text="This is a placeholder for a memory. You can turn a small moment into a story here. You don't have to explain everything.">Read →</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">Story</span>
+          <h3>The Woman Who Left</h3>
+          <p>A fictional story, a half-remembered dream, or perhaps something in between.</p>
+          <button class="read-more" data-title="The Woman Who Left" data-text="This is where a fictional story can live. It can be completely invented, partly true, or something that only exists in your imagination.">Read →</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">Journal</span>
+          <h3>Today</h3>
+          <p>No grand lesson. Just what today felt like.</p>
+          <button class="read-more" data-title="Today" data-text="Write today's entry here. It can be one sentence or ten pages. There are no rules.">Read →</button>
+        </article>
+
+        <article class="card">
+          <span class="tag">Life</span>
+          <h3>What Keeps Me Going</h3>
+          <p>The small things that make continuing feel possible.</p>
+          <button class="read-more" data-title="What Keeps Me Going" data-text="Write about the people, places, dreams, memories, tiny pleasures, or stubborn reasons that keep you moving.">Read →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">About this place</p>
+      <h2>This is not a finished book.</h2>
+      <p>
+        It is a record of a person while she is still becoming.
+        Some pages may be polished. Some may be messy. Some may be
+        fictional. Some may be painfully real. They all belong here.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Written slowly. Lived imperfectly.</p>
+    <p>© 2026 My Written Life</p>
+  </footer>
+
+  <dialog id="reader">
+    <button class="close" aria-label="Close">×</button>
+    <p class="eyebrow" id="modal-tag">Writing</p>
+    <h2 id="modal-title"></h2>
+    <p id="modal-text"></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
