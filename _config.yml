@@ -1,0 +1,6 @@
+theme: null
+
+collections:
+  stories:
+    output: true
+    permalink: /stories/:name/
