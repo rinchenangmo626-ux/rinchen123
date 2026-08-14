@@ -2,7 +2,7 @@ content:
   - name: stories
     label: Stories
     type: collection
-   path: content/_stories
+  path: content/_stories
     fields:
       - name: title
         label: Title
