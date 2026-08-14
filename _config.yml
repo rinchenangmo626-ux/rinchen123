@@ -1,6 +1,13 @@
-theme: null
+collections_dir: content
 
 collections:
   stories:
     output: true
     permalink: /stories/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: stories
+    values:
+      layout: story
