@@ -85,7 +85,7 @@
             {{ story.content | strip_html | strip_newlines | truncate: 180 }}
           </p>
 
-          <a class="read-more" href="{{ story.url | relative_url }}">
+         <a class="read-more" href="{{ site.baseurl }}{{ story.url }}">
             Read →
           </a>
 
