@@ -1,46 +1,67 @@
 ---
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A public collection of stories, memories, thoughts, and fragments from a life still being lived.">
+
+  <meta
+    name="description"
+    content="A public collection of stories, memories, thoughts, and fragments from a life still being lived."
+  >
+
   <title>My Written Life</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 
 <body>
 
   <header class="site-header">
-    <a class="logo" href="{{ '/' | relative_url }}">My Written Life</a>
 
-    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <a class="logo" href="{{ '/' | relative_url }}">
+      My Written Life
+    </a>
+
+    <button class="menu-toggle" aria-label="Open menu">
+      ☰
+    </button>
 
     <nav class="nav">
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="#writing">Writing</a>
       <a href="#about">About</a>
     </nav>
+
   </header>
 
 
   <main id="home">
 
     <section class="hero">
-      <p class="eyebrow">An unfinished collection</p>
+
+      <p class="eyebrow">
+        An unfinished collection
+      </p>
 
       <h1>
         Things I don't<br>
         <em>want to lose.</em>
       </h1>
 
-      <p class="author-name">Rinchen Angmo</p>
+      <p class="author-name">
+        Rinchen Angmo
+      </p>
 
       <p class="intro">
         Stories, memories, thoughts, questions, fragments and everything
@@ -50,24 +71,35 @@
       <a class="button" href="#writing">
         Read the writing ↓
       </a>
+
     </section>
 
 
     <section class="quote">
-      <p>“I don't need this to become important. I just want it to exist.”</p>
+
+      <p>
+        “I don't need this to become important. I just want it to exist.”
+      </p>
+
     </section>
 
 
     <section id="writing" class="writing-section">
 
       <div class="section-heading">
-        <p class="eyebrow">The collection</p>
 
-        <h2>Writing</h2>
+        <p class="eyebrow">
+          The collection
+        </p>
+
+        <h2>
+          Writing
+        </h2>
 
         <p>
           There is no fixed order here. I write whatever wants to be written.
         </p>
+
       </div>
 
 
@@ -79,15 +111,22 @@
 
         <article class="card {% if forloop.first %}featured{% endif %}">
 
-          <span class="tag">Writing</span>
+          <span class="tag">
+            Writing
+          </span>
 
-          <h3>{{ story.title }}</h3>
+          <h3>
+            {{ story.title }}
+          </h3>
 
           <p>
             {{ story.content | strip_html | strip_newlines | truncate: 180 }}
           </p>
 
-         <a class="read-more" href="{{ site.baseurl }}{{ story.url }}">
+          <a
+            class="read-more"
+            href="{{ story.url | relative_url }}"
+          >
             Read →
           </a>
 
@@ -102,9 +141,13 @@
 
     <section id="about" class="about">
 
-      <p class="eyebrow">About this place</p>
+      <p class="eyebrow">
+        About this place
+      </p>
 
-      <h2>This is not a finished book.</h2>
+      <h2>
+        This is not a finished book.
+      </h2>
 
       <p>
         It is a record of a person while she is still becoming.
@@ -119,13 +162,18 @@
 
   <footer>
 
-    <p>Written slowly. Lived imperfectly.</p>
+    <p>
+      Written slowly. Lived imperfectly.
+    </p>
 
-    <p>© 2026 My Written Life</p>
+    <p>
+      © 2026 My Written Life
+    </p>
 
   </footer>
 
 
- <script src="script.js"></script>
+  <script src="{{ '/script.js' | relative_url }}"></script>
+
 </body>
 </html>
